@@ -1,0 +1,47 @@
+{
+  "Stacks": [
+    {
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:012345678901:stack/EcsSampleStack/790004d0-42aa-11eb-8fb1-06aa9b7dfc56",
+      "StackName": "EcsSampleStack",
+      "ChangeSetId": "arn:aws:cloudformation:ap-northeast-1:012345678901:changeSet/CDK-f24d6994-f0fc-4331-bd26-bc0619b9d34a/e91283fa-658a-47e1-a67f-46c93deb36fc",
+      "CreationTime": "2020-12-20T10:02:31.317000+00:00",
+      "LastUpdatedTime": "2020-12-20T10:02:36.701000+00:00",
+      "RollbackConfiguration": {},
+      "StackStatus": "CREATE_COMPLETE",
+      "DisableRollback": false,
+      "NotificationARNs": [],
+      "Capabilities": ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM", "CAPABILITY_AUTO_EXPAND"],
+      "Outputs": [
+        {
+          "OutputKey": "Subnet1Output",
+          "OutputValue": "subnet-01036767a9c7c3ab8"
+        },
+        {
+          "OutputKey": "AppClusterNameOutput",
+          "OutputValue": "Cluster"
+        },
+        {
+          "OutputKey": "SecurityGroupIdOutput",
+          "OutputValue": "sg-0aa077022a7a4c54d"
+        },
+        {
+          "OutputKey": "Subnet2Output",
+          "OutputValue": "subnet-0890a957951b89645"
+        },
+        {
+          "OutputKey": "EcsTaskExecutionRoleOutput",
+          "OutputValue": "arn:aws:iam::012345678901:role/EcsTaskExecutionRole"
+        },
+        {
+          "OutputKey": "EcsTaskRoleOutput",
+          "OutputValue": "arn:aws:iam::012345678901:role/EcsTaskRole"
+        }
+      ],
+      "Tags": [],
+      "EnableTerminationProtection": false,
+      "DriftInformation": {
+        "StackDriftStatus": "NOT_CHECKED"
+      }
+    }
+  ]
+}
