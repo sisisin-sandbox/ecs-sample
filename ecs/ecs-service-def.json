@@ -1,0 +1,22 @@
+{
+  "deploymentConfiguration": {
+    "maximumPercent": 200,
+    "minimumHealthyPercent": 100
+  },
+  "desiredCount": 1,
+  "enableECSManagedTags": false,
+  "loadBalancers": [],
+  "launchType": "FARGATE",
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "assignPublicIp": "ENABLED",
+      "securityGroups": ["{{ must_env `SECURITY_GROUP_ID` }}"],
+      "subnets": ["{{ must_env `SUBNET_1` }}", "{{ must_env `SUBNET_2` }}"]
+    }
+  },
+  "placementConstraints": [],
+  "placementStrategy": [],
+  "platformVersion": "LATEST",
+  "schedulingStrategy": "REPLICA",
+  "serviceRegistries": []
+}

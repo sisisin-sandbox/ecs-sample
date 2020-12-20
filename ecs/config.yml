@@ -1,0 +1,5 @@
+region: ap-northeast-1
+cluster: {{ must_env `CLUSTER_NAME` }}
+service: foo
+service_definition: ecs-service-def.json
+task_definition: ecs-task-def.json

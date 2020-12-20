@@ -1,0 +1,40 @@
+{
+  "containerDefinitions": [
+    {
+      "cpu": 0,
+      "dnsSearchDomains": [],
+      "dnsServers": [],
+      "dockerLabels": {},
+      "dockerSecurityOptions": [],
+      "entryPoint": [],
+      "environment": [],
+      "essential": true,
+      "extraHosts": [],
+      "image": "ghcr.io/sisisin/nginx:alpine",
+      "links": [],
+      "linuxParameters": {
+        "capabilities": {},
+        "devices": []
+      },
+      "memory": 512,
+      "memoryReservation": 512,
+      "mountPoints": [],
+      "name": "foo-nginx",
+      "portMappings": [],
+      "privileged": false,
+      "pseudoTerminal": false,
+      "readonlyRootFilesystem": false,
+      "ulimits": [],
+      "volumesFrom": []
+    }
+  ],
+  "cpu": "256",
+  "executionRoleArn": "{{ must_env `EXECUTION_ROLE_ARN` }}",
+  "family": "foo",
+  "memory": "512",
+  "networkMode": "awsvpc",
+  "placementConstraints": [],
+  "requiresCompatibilities": ["FARGATE"],
+  "taskRoleArn": "{{ must_env `TASK_ROLE_ARN` }}",
+  "volumes": []
+}
